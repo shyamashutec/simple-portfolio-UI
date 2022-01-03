@@ -182,8 +182,9 @@ figcaption {
   height: auto;
   background-color: #59437a;
   color: white;
-  z-index: -1;
+  /* z-index: -1; */
 }
+
 .myskills {
   height: 592px;
   width: 1140px;
@@ -287,10 +288,12 @@ figcaption {
   line-height: 1.6;
   word-wrap: break-word;
 } */
+
 li {
   font-size: 1.25rem;
   list-style: none;
 }
+
 .icon {
   display: inline-block;
   position: absolute;
@@ -303,8 +306,8 @@ li {
 }
 .card {
   /* margin-top: 0px; */
-  width: 45px;
-  height: 330px;
+  width: 100%;
+  height: 100%;
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
@@ -380,7 +383,7 @@ li {
 }
 .u-para {
   /* font-family: Poppins; */
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
   line-height: 2;
   margin: 20px 0 0;
   color: #59437a;
@@ -465,6 +468,7 @@ li {
   margin: 0 auto;
   position: relative;
 }
+
 .exp {
   font-size: 4.5rem;
   /* font-family: Poppins; */
@@ -585,12 +589,22 @@ li {
   font-size: 1.5rem;
   line-height: 1.2;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .u-price {
+    font-size: 2.5rem;
+  }
+}
 .u-text {
   font-weight: 700;
   margin: 13px auto 0;
   font-size: 3rem;
   line-height: 1.1;
   letter-spacing: 1px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .u-text {
+    font-size: 4rem;
+  }
 }
 .u-textp {
   font-size: 1.25rem;
@@ -600,9 +614,21 @@ li {
   word-wrap: break-word;
   position: relative;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .u-textp {
+    font-size: 1.5rem;
+  }
+}
 .u-clearfix {
   width: 976px;
   margin: 33px auto 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .u-clearfix {
+    width: auto;
+    font-size: 1.5rem;
+    margin: 33px auto;
+  }
 }
 .u-container8 {
   display: flex;
@@ -619,12 +645,13 @@ li {
   line-height: 2;
   margin: 0;
 }
+
 .inninner {
   padding: 30px;
 }
 .innercon {
-  flex: 0 0 33.33333333%;
-  max-width: 33.33333333%;
+  /* flex: 0 0 33.33333333%;
+  max-width: 33.33333333%; */
 }
 .mybuton {
   margin: 0 auto 10px;
@@ -672,6 +699,15 @@ li {
   font-size: 3.75rem;
   letter-spacing: 2px;
 }
+.allcards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3px;
+}
 .u-carddiv {
   height: 328px;
   margin-top: 273px;
@@ -679,42 +715,27 @@ li {
   background-color: #59437a;
 }
 .u-cards {
+  display: flex;
   width: 1140px;
   margin: -246px auto 0;
   position: relative;
 }
-.u-gutter0 {
-  margin: -13px;
-  /* display: block; */
-}
-/* .u-gutter-layout {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-height: 100%;
-  max-width: 100%;
-  flex: 1 1 100%;
-} */
+
 .ourcard {
   padding: 30px;
-  width: 362px;
-  /* flex: 30 0 70%; */
+  width: 27%;
+
   position: relative;
-  height: 660px;
-  /* max-width: 100%; */
+  height: 100%;
   flex-direction: column;
-} /*
-.u-individualcard {
-  flex: 0 0 33.33333333%;
-  max-width: 33.33333333%;
-  max-height: 100%;
-  min-height: fit-content;
-} */
+}
 .u-layout-col {
-  display: grid;
-  grid-template-columns: 410px 410px 410px;
-  /* flex-direction: column; */
-  /* min-height: 100%; */
+  margin-top: -13rem;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: 410px 410px 410px; */
+  justify-content: space-between;
 }
 .card-img-top {
   width: 1200px;
@@ -747,8 +768,6 @@ li {
 }
 .u-conthidden {
   min-height: 269px;
-  /* display: flex;
-  position: relative; */
   flex: 30 0 50%;
 }
 .u-cont-layout {
@@ -775,6 +794,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1 1 auto;
 }
 .demo {
   color: #59437a;
@@ -874,4 +894,69 @@ li {
 }
 .second {
   color: #d4c7e8;
+}
+@media only screen and (max-width: 945px) {
+  .inner9 {
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .experience {
+    width: 940px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .experience {
+    width: auto;
+  }
+  .exp {
+    font-size: 5.5rem;
+  }
+  .custompara {
+    font-size: 1.25rem;
+  }
+  .custom-font {
+    font-size: 1.3rem;
+  }
+  .custhead {
+    font-size: 2.5rem;
+  }
+  .custp {
+    font-size: 2rem;
+  }
+  .deco {
+    font-size: 1.7rem;
+  }
+  .u-button {
+    margin-top: 2rem;
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  li {
+    font-size: 1.9rem;
+  }
+  .soft {
+    font-size: 5rem;
+    text-align: center;
+    margin-right: calc(((100% - 1140px) / 2) + 280px);
+    margin-left: calc(((100% - 1140px) / 2) + 280px);
+  }
+  .u-layout-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .u-layout-col div {
+    height: max-content;
+  }
+  .card1,
+  .card2 {
+    flex: 0 0 50%;
+  }
+  .card3 {
+    flex: 0 0 100%;
+  }
 }

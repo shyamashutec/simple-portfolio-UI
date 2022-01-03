@@ -1,12 +1,11 @@
 var y = document.getElementsByClassName("value")[0].innerHTML;
 x = 0;
-function change() {
+var change = () => {
   setInterval(() => {
     if (x <= y) {
       return (document.getElementsByClassName("value")[0].innerHTML = x++);
     }
   }, 20);
-}
-window.onload = () => {
-  change();
 };
+
+change();
