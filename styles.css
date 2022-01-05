@@ -6,6 +6,9 @@
 body {
   width: fit-content;
 }
+.resume {
+  text-decoration: none;
+}
 .title {
   display: flex;
   flex-direction: row;
@@ -17,11 +20,8 @@ body {
 }
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0px 20px;
-  /* min-height: 20%; */
-  /* margin-left: -500px;
-  margin-right: -500px; */
 }
 
 .menu {
@@ -210,6 +210,7 @@ figcaption {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  padding: 0 2rem;
 }
 .u-layout-row {
   display: flex;
@@ -1030,17 +1031,17 @@ li {
     height: 4.2rem;
   }
   .form-input::placeholder {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
   }
   .bio-para {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     margin: 0px;
   }
   .bio {
     padding: 40px;
   }
   .my-para {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 100px;
   }
   h6 {
@@ -1054,7 +1055,7 @@ li {
     height: 11.2rem;
   }
   .mikkel {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .custombtn {
     text-align: center;
@@ -1092,7 +1093,7 @@ li {
     height: 866px;
   }
   .decade {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .resume {
     padding-top: 19px;
@@ -1180,7 +1181,13 @@ li {
     width: 50%;
   }
 }
-@media (max-width: 545px) {
+@media (max-width: 1199px) {
+  .crds {
+    /* width: 940px; */
+    /* margin-top: -450px; */
+  }
+}
+@media (max-width: 535px) {
   .title {
     flex-direction: column-reverse;
   }
@@ -1193,13 +1200,9 @@ li {
     /* height: 14rem; */
     border-width: 0.5rem;
   }
-  @media (max-width: 1199px) {
-    .crds {
-      width: 940px;
-      margin-top: -450px;
-    }
-  }
+
   .navigation {
+    justify-content: space-between;
     padding-top: 3rem;
     padding-bottom: 5rem;
   }
@@ -1256,7 +1259,8 @@ li {
     font-size: 2.5rem;
   }
   .insideskil {
-    margin: 9rem 0rem;
+    width: auto;
+    margin: 9rem 4rem;
   }
   .u-layout-row {
     flex-direction: column;
@@ -1268,23 +1272,25 @@ li {
     font-size: 5rem;
   }
   .decade {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   .resume {
-    width: 50%;
+    text-decoration: none;
+    /* width: 50%; */
     height: 7rem;
-    font-size: 3rem;
-    padding-left: 10rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.3rem;
+    padding: 1rem 9rem;
   }
   .container2 {
     margin: 2rem 4rem;
   }
   li {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   .container3 {
-    width: auto;
-    margin-right: 3rem;
+    width: 80%;
+    margin: 3rem auto;
   }
   .urepeater {
     /* margin: 0 auto;   */
@@ -1304,7 +1310,8 @@ li {
     font-size: 3rem;
   }
   .card-text {
-    font-size: 2.7rem;
+    padding: 1rem;
+    font-size: 2.4rem;
   }
   .value {
     font-size: 10rem;
@@ -1470,7 +1477,7 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* margin: 0px 90px; */
+    margin: 0px 90px;
     /* gap: 20px; */
     font-size: 1.6rem;
     margin-top: -185px;
@@ -1553,5 +1560,8 @@ li {
   .footer-2 {
     margin-top: 5rem;
     font-size: 2rem;
+  }
+  .lists {
+    font-size: 3rem;
   }
 }
