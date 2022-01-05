@@ -210,6 +210,7 @@ figcaption {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  padding: 0 2rem;
 }
 .u-layout-row {
   display: flex;
@@ -1030,17 +1031,17 @@ li {
     height: 4.2rem;
   }
   .form-input::placeholder {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
   }
   .bio-para {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     margin: 0px;
   }
   .bio {
     padding: 40px;
   }
   .my-para {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 100px;
   }
   h6 {
@@ -1054,7 +1055,7 @@ li {
     height: 11.2rem;
   }
   .mikkel {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .custombtn {
     text-align: center;
@@ -1092,7 +1093,7 @@ li {
     height: 866px;
   }
   .decade {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .resume {
     padding-top: 19px;
@@ -1182,8 +1183,8 @@ li {
 }
 @media (max-width: 1199px) {
   .crds {
-    width: 940px;
-    margin-top: -450px;
+    /* width: 940px; */
+    /* margin-top: -450px; */
   }
 }
 @media (max-width: 535px) {
@@ -1275,11 +1276,11 @@ li {
   }
   .resume {
     text-decoration: none;
-    width: 50%;
+    /* width: 50%; */
     height: 7rem;
     font-size: 2.8rem;
     letter-spacing: 0.3rem;
-    padding-left: 9rem;
+    padding: 1rem 9rem;
   }
   .container2 {
     margin: 2rem 4rem;
@@ -1476,7 +1477,7 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* margin: 0px 90px; */
+    margin: 0px 90px;
     /* gap: 20px; */
     font-size: 1.6rem;
     margin-top: -185px;
