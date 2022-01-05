@@ -180,7 +180,7 @@ figcaption {
   font-size: 1.25rem;
   font-weight: 700;
   margin: 23px auto 0;
-  color: #59437a;
+  color: #434992;
   font-family: Montserrat, sans-serif;
   word-wrap: break-word;
   position: relative;
@@ -196,13 +196,13 @@ figcaption {
 }
 
 .myskills {
-  height: 592px;
-  width: 1140px;
+  height: auto;
+  width: auto;
   margin: 0 auto;
 }
 .insideskil {
-  width: 200px;
-  height: 200px;
+  width: auto;
+  height: auto;
   margin-top: 60px;
   margin-bottom: 60px;
   min-height: 400px;
@@ -325,7 +325,7 @@ li {
   width: 100%;
   height: 100%;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat";
 }
 .value {
   color: #c262af;
@@ -738,8 +738,8 @@ li {
   flex-direction: column;
 }
 .u-layout-col {
-  margin-top: -13rem;
-  width: 80%;
+  /* margin-top: -13rem;
+  width: 80%; */
   display: flex;
   /* display: grid; */
   flex-wrap: nowrap;
@@ -789,6 +789,10 @@ li {
   flex: 1;
   max-width: 100%;
   padding: 30px;
+}
+.crds {
+  width: 1140px;
+  margin: -246px auto 0;
 }
 .card-2 {
   margin-top: 154px;
@@ -899,11 +903,17 @@ li {
   font-size: 1rem;
   line-height: 1.6;
   word-wrap: break-word;
+  margin-top: 134px;
+}
+.anchor {
+  /* padding-top: 120px; */
+  /* text-decoration: none; */
+  color: #d4c7e8;
 }
 .myfooter {
   background-color: #333333;
   width: 100%;
-  height: 15.2rem;
+  height: auto;
   color: white;
   display: flex;
   flex-direction: column;
@@ -912,6 +922,9 @@ li {
   align-items: center;
   text-align: center;
   word-wrap: break-word;
+}
+.footer-2 {
+  margin-top: 0;
 }
 .second {
   color: #d4c7e8;
@@ -928,7 +941,7 @@ li {
     width: 940px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 536px) and (max-width: 991px) {
   .experience {
     width: auto;
   }
@@ -955,7 +968,7 @@ li {
     font-size: 1.7rem;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 536px) and (max-width: 991px) {
   li {
     font-size: 1.9rem;
   }
@@ -966,14 +979,14 @@ li {
     margin-left: calc(((100% - 1140px) / 2) + 280px);
   }
   .u-layout-col {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0px 90px;
     gap: 20px;
     font-size: 1.6rem;
-    margin-top: -185px;
+    /* margin-top: -185px; */
     margin-bottom: 90px;
   }
   .allcards {
@@ -996,6 +1009,9 @@ li {
   }
   .u-section3 {
     height: max-content;
+  }
+  .u-layout-row {
+    margin: 0 80px;
   }
   .img3 {
     height: 100%;
@@ -1026,6 +1042,12 @@ li {
   .my-para {
     font-size: 1.4rem;
     margin-top: 100px;
+  }
+  h6 {
+    line-height: 0;
+  }
+  .all {
+    font-family: "Open Sans", sans-serif;
   }
   .profile {
     width: 11.2rem;
@@ -1099,7 +1121,7 @@ li {
   }
   .container3 {
     width: auto;
-    margin: 30px 60px 60px 30px;
+    margin: 30px 90px 60px 90px;
   }
   .urepeater {
     display: grid;
@@ -1119,7 +1141,7 @@ li {
   }
   .u-container-style {
     width: auto;
-    margin: 30px;
+    margin: 30px 90px;
   }
   .u-align {
     font-size: 3rem;
@@ -1135,7 +1157,7 @@ li {
   }
   .u-expanded {
     width: auto;
-    margin: 0 20px;
+    margin: 0 90px;
     height: auto;
   }
   .all {
@@ -1156,5 +1178,380 @@ li {
   }
   .width {
     width: 50%;
+  }
+}
+@media (max-width: 545px) {
+  .title {
+    flex-direction: column-reverse;
+  }
+  .mobile {
+    font-size: 7.5rem;
+    line-height: 1;
+  }
+  .lineover {
+    width: 19rem;
+    /* height: 14rem; */
+    border-width: 0.5rem;
+  }
+  @media (max-width: 1199px) {
+    .crds {
+      width: 940px;
+      margin-top: -450px;
+    }
+  }
+  .navigation {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+  .navigation > .logo {
+    width: 9rem;
+    height: 5rem;
+  }
+  .heading {
+    padding: 0 7rem;
+    margin-top: 5rem;
+  }
+  .menu {
+    width: 5rem;
+    height: 5rem;
+  }
+  .aboutbtn {
+    width: 80%;
+    height: 7rem;
+    /* text-align: center; */
+    padding-top: 1rem;
+    font-size: 3rem;
+    margin-right: 30rem;
+  }
+  .cards {
+    height: max-content;
+  }
+  .page2 {
+    height: 120rem;
+  }
+  .first {
+    width: 100%;
+    height: 100%;
+  }
+  .gridcards {
+    margin: -255px auto 0px;
+    width: 70%;
+    height: auto;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .square {
+    height: 11rem;
+    width: 11rem;
+  }
+  .item1 {
+    width: 100%;
+    height: 35rem;
+    background-color: white;
+    padding-top: 20%;
+  }
+  .inside {
+    padding: 2rem 10rem;
+  }
+  figcaption {
+    font-size: 2.5rem;
+  }
+  .insideskil {
+    margin: 9rem 0rem;
+  }
+  .u-layout-row {
+    flex-direction: column;
+  }
+  .skil {
+    font-size: 3rem;
+  }
+  .expert {
+    font-size: 5rem;
+  }
+  .decade {
+    font-size: 2rem;
+  }
+  .resume {
+    width: 50%;
+    height: 7rem;
+    font-size: 3rem;
+    padding-left: 10rem;
+  }
+  .container2 {
+    margin: 2rem 4rem;
+  }
+  li {
+    font-size: 2rem;
+  }
+  .container3 {
+    width: auto;
+    margin-right: 3rem;
+  }
+  .urepeater {
+    /* margin: 0 auto;   */
+    text-align: center;
+    /* align-items: center; */
+    grid-template-columns: repeat(1, 100%);
+  }
+  .ccard {
+    width: 100%;
+    height: 40rem;
+  }
+  .line {
+    /* height: 9rem; */
+    border-width: 1.5rem;
+  }
+  .card-title {
+    font-size: 3rem;
+  }
+  .card-text {
+    font-size: 2.7rem;
+  }
+  .value {
+    font-size: 10rem;
+  }
+  .personal {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .u-expanded {
+    margin: 0;
+  }
+  .u-container-style {
+    width: auto;
+  }
+  .u-align {
+    font-size: 4rem;
+  }
+  .u-para {
+    font-size: 3rem;
+  }
+  .u-button {
+    width: auto;
+    height: 7rem;
+    padding-top: 1.3rem;
+    font-size: 3rem;
+  }
+  .u-expanded {
+    width: auto;
+    margin: 10px 3rem;
+  }
+  .all {
+    font-size: 3rem;
+  }
+  .para {
+    font-size: 2.5rem;
+    margin-bottom: 4.5rem;
+  }
+  body {
+    width: fit-content;
+  }
+  .u-container5 {
+    padding-left: 7rem;
+    margin-bottom: 7rem;
+  }
+  .facebook {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 3rem;
+  }
+  .social {
+    width: auto;
+    height: auto;
+  }
+  .experience {
+    width: auto;
+    height: auto;
+    padding: 3rem 5rem;
+  }
+  .exp {
+    text-align: left;
+    margin: 0;
+    font-size: 7rem;
+  }
+  .custompara {
+    text-align: left;
+    margin: 2rem 0;
+    width: auto;
+    font-size: 3rem;
+  }
+  .u-list {
+    margin: 0;
+    width: auto;
+  }
+  .u-repeater {
+    min-height: auto;
+  }
+  .hrline {
+    border-width: 0.2rem;
+  }
+  .custom-font {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .u-container6 {
+    gap: 2rem;
+  }
+  .u-container7 {
+    width: auto;
+    height: auto;
+    /* font-size: 4rem; */
+  }
+  .u-innercontainer {
+    padding: 0;
+  }
+  .custhead {
+    font-size: 4rem;
+  }
+  .custp {
+    font-size: 3rem;
+  }
+  .deco {
+    font-size: 3rem;
+    margin: 4rem 0;
+  }
+  .mybtn {
+    margin-top: 4rem;
+    font-size: 3rem;
+    padding: 3rem 18rem;
+    height: fit-content;
+  }
+  .expertise {
+    padding: 3rem 3rem;
+  }
+  .u-clearfix {
+    width: auto;
+    /* margin: 3rem 3rem 0 3rem; */
+    justify-content: left;
+    /* text-align: left; */
+  }
+  .u-price,
+  .u-text,
+  .u-textp,
+  .u-clearfix {
+    margin: 0;
+    font-size: 4rem;
+    width: auto;
+    padding: 2rem;
+  }
+  .u-container8 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .cust-list {
+    padding: 0;
+  }
+  .cust-list li {
+    margin: 0;
+  }
+  .mybuton {
+    margin-top: 4rem;
+    font-size: 3rem;
+    padding: 3rem 18rem;
+    height: fit-content;
+  }
+  .soft {
+    text-align: center;
+    font-size: 6rem;
+  }
+  .u-carddiv {
+    height: 40rem;
+  }
+  .allcards {
+    margin-top: -40rem;
+  }
+  .crds {
+    margin-top: 0;
+  }
+  .u-layout-col {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin: 0px 90px; */
+    /* gap: 20px; */
+    font-size: 1.6rem;
+    margin-top: -185px;
+    margin-bottom: 90px;
+  }
+  .card-3,
+  .card-2 {
+    margin: 0;
+  }
+  .card-img-top {
+    height: auto;
+  }
+  .thetitle {
+    font-size: 3rem;
+  }
+  .u-thebutton {
+    font-size: 3rem;
+  }
+  .thetext {
+    font-size: 2.6rem;
+  }
+  .container9 {
+    height: auto;
+    flex-direction: column;
+  }
+  .inner9 {
+    width: auto;
+    padding: 6rem 22%;
+  }
+  .demo {
+    font-size: 7rem;
+  }
+  .demo-para {
+    font-size: 3rem;
+  }
+  .form-input {
+    width: auto;
+    height: auto;
+    font-size: 3.25rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  .inner9-2 {
+    width: auto;
+  }
+  .bio-para {
+    font-size: 3rem;
+  }
+  .prof {
+    justify-content: center;
+    flex: 1 1 0;
+    width: 100%;
+    gap: 2rem;
+  }
+  .innerbio {
+    gap: 2rem;
+  }
+  .profile {
+    height: auto;
+    width: auto;
+  }
+  .names {
+    width: 20%;
+  }
+  .mikkel {
+    font-size: 4rem;
+  }
+  .appd {
+    font-size: 2rem;
+  }
+  .my-para {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .first {
+    font-size: 2rem;
+  }
+  .footer-2 {
+    margin-top: 5rem;
+    font-size: 2rem;
   }
 }
